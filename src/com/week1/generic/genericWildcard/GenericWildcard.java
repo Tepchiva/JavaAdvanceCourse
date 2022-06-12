@@ -25,7 +25,7 @@ public class GenericWildcard {
          * Can do example
          */
         //use as local variable
-        List<?>  list = List.of("chiva","phanat","phanut");
+        List<?>  list = List.of("chiva","phanat",23);
         System.out.format("Local variable: %s%n",list);
 
         //use as return type

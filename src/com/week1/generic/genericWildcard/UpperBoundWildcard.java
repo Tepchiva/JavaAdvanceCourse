@@ -17,9 +17,15 @@ public class UpperBoundWildcard {
         long result2 = (long) sum(list2);
         System.out.format("List long: %s%n",result2);
 
-        List<Double> list3 = List.of(43d,34d,345.5);
-        double result3 = sum(list3);
-        System.out.format("List double: %s%n",result3);
+        List<?> list3 = List.of(43d,20,23f,398l);
+        double result3 = sum((List<? extends Number>) list3);
+        System.out.format("List of wildcard: %s%n",result3);
+
+        /*
+            Will compile-time error
+            List<?> list4 = List.of(43d,20,23f,398l,"string");
+            double result4 = sum((List<? extends Number>) list4);
+         */
     }
 
     public static double sum(List<? extends Number> numbers) {

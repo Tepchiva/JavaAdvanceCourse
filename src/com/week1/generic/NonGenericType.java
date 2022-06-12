@@ -14,9 +14,11 @@ public class NonGenericType {
     public static void main(String[] args) {
         NonGenericType nonGenericType = new NonGenericType();
         nonGenericType.setValue("Tep Chiva");
-        //nonGenericType.setValue(10); error casting type
-
         String name = (String) nonGenericType.getValue();
         System.out.println(name);
+
+        nonGenericType.setValue(10);
+        int intNumber = (int) nonGenericType.getValue();
+        System.out.println(intNumber);
     }
 }

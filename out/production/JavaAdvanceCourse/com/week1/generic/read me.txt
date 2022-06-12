@@ -1,0 +1,15 @@
+Please demo order by number below
+
+1-Generic Class
+2-Generic Interface
+3-Generic Type
+4-Generic Method
+5-Generic Bounded Type Parameters
+6-Generic and Inheritance
+7-Generic Class and Subtyping
+8-Generic Wildcards
+9-Generic Upper Bounded Wildcard
+10-Generic Undounded Wildcard
+11-Generic Lower Bounded Wildcard
+12-Subtype using Generic Wildcard
+13-Generic Type Erasure

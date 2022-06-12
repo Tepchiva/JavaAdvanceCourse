@@ -14,7 +14,7 @@ class  GenericSubType<T> extends GenericParentType<T>{
 
 public class GenericInheritance {
     public static void main(String[] args) {
-        //we have cladd B inherit from class A, so we can assign instance of B to A
+        //we have class B inherit from class A, so we can assign instance of B to A
         String name = "chiva";
         Object obj = new Object();
         obj = name;
