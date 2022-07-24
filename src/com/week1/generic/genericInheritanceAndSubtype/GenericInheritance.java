@@ -38,6 +38,8 @@ public class GenericInheritance {
 
 
         // example with generic List
-        List<Integer> list = new ArrayList<>();
+        List<GenericParentType<String>> list = new ArrayList<>();
+        list.add(genericString);
+
     }
 }

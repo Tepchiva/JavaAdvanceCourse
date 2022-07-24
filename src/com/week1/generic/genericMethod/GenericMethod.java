@@ -36,7 +36,8 @@ public class GenericMethod {
         name2.add("Phanut");
 
         // List<String> combineName = GenericMethod.combine(name1,name2);
-        List<String> combineName = combine(name1,name2);
+        // List<String> combineName = combine(name1,name2);
+        List<String> combineName = GenericMethod.<String>combine(name1,name2);
         System.out.format("Combine list: %s%n",combineName);
     }
 }

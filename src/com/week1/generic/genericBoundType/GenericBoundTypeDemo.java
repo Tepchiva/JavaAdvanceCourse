@@ -5,7 +5,7 @@ import java.util.List;
 
 public class GenericBoundTypeDemo {
 
-    //bound type
+    // generic bound type
     public static <T extends Number> double sum(List<T> list) {
         double total = 0;
         for (T num : list) {
@@ -31,7 +31,8 @@ public class GenericBoundTypeDemo {
         System.out.format("Sum list of double type %s%n", result2);
 
         List<Long> number3= List.of(1L,2l,5l);
-        long reuslt3 = (long) GenericBoundTypeDemo.sum(number3);
+//        long reuslt3 = (long) GenericBoundTypeDemo.sum(number3);
+        long reuslt3 = (long) GenericBoundTypeDemo.<Long>sum(number3);
         System.out.format("Sum list of long type %s%n", reuslt3);
 
         List<String> name = List.of("chiva","dara");

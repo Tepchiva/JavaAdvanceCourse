@@ -1,5 +1,6 @@
 package com.week1.generic;
 
+// Generic class
 public class GenericType<T> {
     private T value;
 
